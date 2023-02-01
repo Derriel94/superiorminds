@@ -1,0 +1,70 @@
+
+.blogs-container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin-top: 50px;
+
+}
+.mainBlogger {
+  background: linear-gradient(to top left, #664c19, #bb8b2d);
+  width: 550px;
+  border-radius: 20px;
+}
+.mainBlogger img {
+  width: 450px;
+  height: auto;
+  border: 2px papayawhip solid;
+  border-radius: 20px;
+}
+.blog {
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #664c19, #bb8b2d);
+
+}
+.page-cont {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  margin-right: 40px;
+  
+}
+.page-cont > * {
+  padding: 5px;
+  cursor: pointer;
+}
+ 
+.pagination-button {
+  font-size: 1.1rem;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: .2rem;
+}
+ 
+.pagination-button:not(.disabled):hover {
+  
+}
+ 
+.active {
+  color: #fff;
+  background: black;
+}
+.star {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  .mainBlogger {
+    width: 95%;
+  }
+  .mainBlogger img {
+    width: 95%;
+    height: auto;
+  }
+
+  }
