@@ -33,7 +33,7 @@ const Nav = (  ) => {
           {mainUser
           ?
           <div className="nav">
-              <h1 id="edit"><Link to="/editor" style={{ textDecoration: 'none', color: 'blue' }}>EDITOR</Link></h1>
+              <h1><Link to="/editor" style={{ textDecoration: 'none', color: 'papayawhip' }}>EDITOR</Link></h1>
               <div><h1><Link to="/blogs" style={{ textDecoration: 'none', color: 'papayawhip' }}>Blogs/Poems</Link></h1></div>
               <div><h1><Link to="/music" style={{ textDecoration: 'none', color: 'papayawhip' }}>Music</Link></h1></div>
               <div><h1><Link to="/voiceovers" style={{ textDecoration: 'none', color: 'papayawhip' }}>VoiceOver</Link></h1></div>

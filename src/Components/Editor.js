@@ -29,7 +29,7 @@ const Editor = () => {
 
 	const handlePublish =() =>  {
 		if (!formData.title || !formData.description || !formData.image) {
-			alert('Please Fill The Tank!');
+			toast('Please Fill The Tank!');
 			return;
 		}
 
@@ -90,7 +90,7 @@ const Editor = () => {
 			</div>
 			<div>
 			<p>Image</p>
-			<input ty pe="file" name="image" accept="image/*" onChange={(e)=>handleImageChange(e)}/>
+			<input type="file" name="image" accept="image/*" onChange={(e)=>handleImageChange(e)}/>
 			{
 				progress === 0 ? null : (
 					<div style={{backgroundColor:"blue", width: `${progress} %` }}>

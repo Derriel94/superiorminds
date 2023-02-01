@@ -365,6 +365,10 @@ body {
     font-size: smaller;
     
   }
+  .home img{
+    height: 350px;
+    width: 350px;
+  }
   .home {
     max-width: 100%;
   }.Contact,.blogUpload  {

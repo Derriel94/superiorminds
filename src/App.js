@@ -58,7 +58,7 @@ const App = () => {
            <div>Superior Minds Ink.</div>
             {user
             ?
-              <p onClick={logout} id="signout">SignOut: {user.displayName}</p>
+              <div><p onClick={logout} id="signout" style={{fontSize: "1rem"}}>SignOut: {user.displayName}</p></div>
             :
               <div>
               <div><a href=" https://linktr.ee/MadMac21" target="_blank" rel="noreferrer" id="fiverLink"style={{fontSize: "1.3rem"}}> platforms </a></div>
