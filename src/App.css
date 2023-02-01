@@ -89,12 +89,16 @@ body {
     max-width: 95%;
   }
 }
+.navComponent {
+
+  grid-area: nav;
+}
 .nav {
   display: flex;
+    display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   text-shadow: 1px 2px #664c19;
-  grid-area: nav;
 }
 .nav h1 {
   margin: 10px;
@@ -110,8 +114,11 @@ body {
     font-size: 1.5rem;
   }
 }
-#edit {
-  /*display: none;*/
+.editor {
+  grid-area: home;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .home {
 /*  background: linear-gradient(to bottom right, rgba(83, 177, 210, 1.0), rgba(255, 255, 255, 1.0));
@@ -275,7 +282,12 @@ body {
   margin-right: auto;
   margin-bottom: 100px;
 }
-
+.Login {
+  grid-area: home;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .signinbutton {
   width: 60px;
   margin-left: auto;

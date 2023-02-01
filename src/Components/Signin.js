@@ -49,27 +49,14 @@ const [email, setEmail] = useState("");
   console.log(user)
   return (
     <div className="Login">
-    {/* <div>
       <div>
-        <p>Enter Email</p>
-        <input style={{backgroundColor: "lightskyblue"}} type="email" name="email" value={email} onChange={(e)=>{setInputTyping(true)
-                                                            setEmail(e.target.value)}} />
+        <img src="logo.png" style={{height: "350px", width: "350px"}} />
       </div>
-      <div>
-        <p>Enter Password</p>
-        <input style={{backgroundColor: "lightskyblue"}} type="password" name="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
-      </div>
-        <button type="submit" className="googleLogin" onClick={handleSubmit}>Login</button>
-      </div>*/}
-      <img src="logo.png" style={{height: "350px", width: "350px"}} />
       <div>
         <button className="googleLogin" onClick={signInWithGoogle}>
                 Login with Google
             </button>
       </div>
-    {/* <div>
-        <Link className="navLink" style={{color:"white"}} to="/register">Or Register.</Link>
-      </div>*/}
     </div>
   );
 };

@@ -3,8 +3,8 @@ import { toast }from 'react-toastify';
 import { collection, addDoc, Timestamp } from 'firebase/firestore';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import Blogs from './Blogs/Blogs.js';
-
 import { storage, db } from './../firebaseConfig.js';
+
 const Editor = () => {
 
 		const [formData, setFormData] = useState({
@@ -77,8 +77,8 @@ const Editor = () => {
 	};
 	
 	return (
-		<div>
-			<div className="createArticle">
+		<div className="editor">
+			<div>
 				<p style={{fontWeight: "bolder"}}> Create Blog </p>
 			<div>
 				<p>Title</p>

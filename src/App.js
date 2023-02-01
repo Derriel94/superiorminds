@@ -56,13 +56,13 @@ const App = () => {
         <div className="header-container">
            <div><Link to="/" style={{color: "papayawhip"}}><img src="./2.jpg" className="logo"/></Link></div>
            <div>Superior Minds Ink.</div>
-            {isLoggedIn
+            {user
             ?
               <p onClick={logout} id="signout">SignOut: {user.displayName}</p>
             :
               <div>
-              <a href=" https://linktr.ee/MadMac21" target="_blank" rel="noreferrer" id="fiverLink"style={{fontSize: "1.3rem"}}> platforms </a>
-              <Link to="/secretthothblogspot" style={{ textDecoration: 'none', color: 'papayawhip' }}>Login</Link>
+              <div><a href=" https://linktr.ee/MadMac21" target="_blank" rel="noreferrer" id="fiverLink"style={{fontSize: "1.3rem"}}> platforms </a></div>
+              <div><Link to="/secretthothblogspot" style={{fontSize: "1.3rem", color: "papayawhip", textDecoration: "none"}}>Login</Link></div>
               </div>
 
             }
